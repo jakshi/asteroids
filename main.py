@@ -11,6 +11,9 @@ from shot import Shot
 
 
 def main():
+    print("Starting Asteroids!")
+    print(f"Screen width: {SCREEN_WIDTH}")
+    print(f"Screen height: {SCREEN_HEIGHT}")
     pygame.init()
     clock = pygame.time.Clock()
     dt = 0
@@ -47,9 +50,6 @@ def main():
             sprite.draw(screen)
         pygame.display.flip()
         dt = clock.tick(FPS) / 1000.0
-    print("Starting Asteroids!")
-    print(f"Screen width: {SCREEN_WIDTH}")
-    print(f"Screen height: {SCREEN_HEIGHT}")
 
 
 if __name__ == "__main__":
